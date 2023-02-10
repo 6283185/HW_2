@@ -22,7 +22,7 @@ public class S1 {
         // 4. Найти все некратные n числа в диапазоне от Short.MIN_VALUE до i и сохранить в массив m2
         int[] m2 = new int[Short.MAX_VALUE];
         for (int k = Short.MIN_VALUE; k <= i; k++) {
-            if (k % n == 0){
+            if (k % n != 0){
                 m2[k] = k;
             }
 
