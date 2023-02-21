@@ -61,6 +61,12 @@ public class HW_3 {
     }
 
     // 9. Удалить из первого списка все элементы отсутствующие во втором списке.
+//    public static void removeElement(List<String> list, List<String> list2) {
+//        for (int i = 0; i < list.size(); i++) {
+//            if (list.contains(list[i]) && (list2.contains(list2[i] == false)))
+//            list.remove(list.remove(i));
+//        }
+//    }
 
     // 10. *Сортировка списка.
     public static List<String> sortList(List<String> list) {
@@ -72,12 +78,13 @@ public class HW_3 {
 
     public static void main(String[] args) {
 
+
         System.out.println(newList());
         System.out.println(iterList(newList()));
         System.out.println(addListFirst(iterList(newList())));
         System.out.println(getList(addListFirst(iterList(newList()))));
         System.out.println(replaceElement(addListFirst(iterList(newList())), "yellow", "blue!"));
-        System.out.println(removeList(replaceElement(addListFirst(iterList(newList())), "yellow", "yellow!")));
+        System.out.println(removeList(replaceElement(addListFirst(iterList(newList())), "yellow", "purple!")));
         String searchElement = "blue!";
         System.out.println(searchElementList(removeList(replaceElement(addListFirst(iterList(newList())), "yellow", "yellow!")), searchElement));
         System.out.println(sortList(removeList(replaceElement(addListFirst(iterList(newList())), "yellow", "yellow!"))));
